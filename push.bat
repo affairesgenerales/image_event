@@ -7,9 +7,8 @@ echo =========================
 
 :: chemin du repo
 set REPO=C:\image_event
-set IMAGE_SOURCE=%REPO%\incoming\event.jpg
-set IMAGE_TARGET=%REPO%\images\event.jpg
-
+set IMAGE_SOURCE=%REPO%\incoming\event.png
+set IMAGE_TARGET=%REPO%\images\event.png
 :: vérifie si image existe
 if not exist "%IMAGE_SOURCE%" (
     echo ERREUR : image manquante dans incoming\
@@ -25,7 +24,7 @@ copy /Y "%IMAGE_SOURCE%" "%IMAGE_TARGET%" >nul
 :: git
 cd /d %REPO%
 
-git add images/event.jpg
+git add images/event.png
 git commit -m "Update signature image"
 git push
 
