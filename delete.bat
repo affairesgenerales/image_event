@@ -8,7 +8,7 @@ echo SUPPRESSION IMAGE EVENT
 echo =========================
 
 :: force la suppression côté Git (IMPORTANT)
-git rm ./image/event.png
+git rm ./images/event.png
 
 :: stage tout proprement (sécurise le commit)
 git add -A
